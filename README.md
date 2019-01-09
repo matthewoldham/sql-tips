@@ -19,4 +19,4 @@ I recommend the following tools for the quickest PostgreSQL environment on OSX:
     - Developed by the makers of Postgres.app
 
 # License
-[MIT](?)
+[MIT](./LICENSE.md)
