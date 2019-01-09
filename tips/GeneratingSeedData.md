@@ -400,7 +400,8 @@ Using a combination of some of the things we have learned so far (and a few new 
 
 #### Patient Body Temperature
 
-```postgres# SELECT ROUND(randomNumber(35.5,38.0),1) AS degreesCelsius;
+```
+postgres# SELECT ROUND(randomNumber(35.5,38.0),1) AS degreesCelsius;
 
  degreescelsius 
 ----------------
@@ -433,12 +434,13 @@ postgres# SELECT CURRENT_DATE AS currentDate,
 
 #### Random date within the past 30 days
 
-```postgres# SELECT CURRENT_DATE AS currentDate,
-             (CURRENT_DATE-(ROUND(randomNumber(1,29))||' DAYS')::INTERVAL)::DATE AS pastDate;
+```
+postgres# SELECT CURRENT_DATE AS currentDate,
+       (CURRENT_DATE-(ROUND(randomNumber(1,29))||' DAYS')::INTERVAL)::DATE AS pastDate;
 
  currentdate |  pastdate  
 -------------+------------
- 2019-01-09  | 2018-12-27
+ 2019-01-09  | 2018-12-15
 (1 row)
 ```
 
